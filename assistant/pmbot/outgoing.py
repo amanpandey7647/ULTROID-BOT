@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-# https://github.com/xditya/TeleBot/blob/master/telebot/plugins/mybot/pmbot/outgoing.py
+# https://github.com/LEGENDX22/TeleBot/blob/master/telebot/plugins/mybot/pmbot/outgoing.py
 
 from telethon import events
 from telethon.utils import pack_bot_file_id

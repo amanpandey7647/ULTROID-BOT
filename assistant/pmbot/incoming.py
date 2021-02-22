@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-# https://github.com/xditya/TeleBot/blob/master/telebot/plugins/mybot/pmbot/incoming.py
+# https://github.com/LEGENDX22/TeleBot/blob/master/telebot/plugins/mybot/pmbot/incoming.py
 """
 Incoming Message(s) forwarder.
 """
