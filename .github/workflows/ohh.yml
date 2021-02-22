@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "xditya"
+          find: "https://github.com/TeamUltroid/Ultroid"
 
-          replace: "LEGENDX22"
+          replace: "https://github.com/ULTROID-OP/ULTROID-BOT"
 
       - name: Create Pull Request
 
