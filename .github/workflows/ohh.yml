@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "https://github.com/TeamUltroid/Ultroid"
+          find: "TeamUltroid"
 
-          replace: "https://github.com/ULTROID-OP/ULTROID-BOT"
+          replace: "ULTROID-OP"
 
       - name: Create Pull Request
 
