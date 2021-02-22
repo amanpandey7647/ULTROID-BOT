@@ -47,5 +47,5 @@ echo "
 
 			•°• Deployed Successfully °•°
 		   •• Wait till python images are pushed
-	   •• Give build logs in @UltroidSupport if build fails
+	   •• Give build logs in @ULTROID_OP if build fails
 "
