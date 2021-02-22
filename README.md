@@ -40,7 +40,7 @@ A stable pluggable Telegram userbot, based on Telethon.
 - Run the bot:   
 `bash resources/startup/startup.sh`
 
-Made with 💕 by [@ULTROID-OP](https://t.me/ULTROID-OP). <br />
+Made with 💕 by [@ULTROID-OP](https://t.me/ULTROID_OP). <br />
 
 # Credits
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
