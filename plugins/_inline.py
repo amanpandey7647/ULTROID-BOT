@@ -24,7 +24,7 @@ from . import *
 notmine = "This bot is for {}".format(OWNER_NAME)
 ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
 helps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ULTROID_OP)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -34,7 +34,7 @@ Pʟᴜɢɪɴs ~ {}**
 
 if Var.ADDONS:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ULTROID_OP)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -42,7 +42,7 @@ Aᴅᴅᴏɴs ~ {}**
 """
 else:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ULTROID_OP)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
