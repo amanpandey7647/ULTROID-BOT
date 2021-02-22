@@ -12,7 +12,7 @@ echo "
         +-+ +-+ +-+ +-+ +-+ +-+ +-+
  
  
-      Visit @TheUltroid for updates!!
+      Visit @ULTROID_OP for updates!!
 
 "
  

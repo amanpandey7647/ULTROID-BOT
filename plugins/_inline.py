@@ -99,7 +99,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             result = builder.article(
                 title="Help Menu",
                 description="Help Menu - UserBot | Telethon ",
-                url="https://t.me/TheUltroid",
+                url="https://t.me/ULTROID_OP",
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 text=f"** Bᴏᴛ Oғ {OWNER_NAME}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {len(PLUGINS) - 4}\nAᴅᴅᴏɴs ~ {len(ADDONS)}**",
                 buttons=[
@@ -352,7 +352,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = "{} has no detailed help...".format(plugin_name)
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TheUltroid"
+        reply_pop_up_alert += "\n© @ULTROID_OP"
         try:
             if event.query.user_id in sed:
                 await event.edit(
@@ -403,7 +403,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = "{} has no detailed help...".format(plugin_name)
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TheUltroid"
+        reply_pop_up_alert += "\n© @ULTROID_OP"
         try:
             if event.query.user_id in sed:
                 await event.edit(

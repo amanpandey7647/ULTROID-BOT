@@ -5,7 +5,7 @@
     "keywords": ["Telethon", "telegram", "userbot", "python"],
     "repository": "https://github.com/ULTROID-OP/ULTROID-BOT",
     "website": "https://ultroid.now.sh/",
-    "success_url": "https://t.me/TheUltroid",
+    "success_url": "https://t.me/ULTROID_OP",
     "stack": "container",
     "env": {
         "API_ID": {
