@@ -5,12 +5,6 @@ A stable pluggable Telegram userbot, based on Telethon.
   <img src="./resources/extras/logo_rdm.png" alt="TeamUltroid">
 </p>
 
-[![Stars](https://img.shields.io/github/stars/TeamUltroid/Ultroid?style=social)](https://github.com/TeamUltroid/Ultroid/stargazers)
-[![Forks](https://img.shields.io/github/forks/TeamUltroid/Ultroid?style=social)](https://github.com/TeamUltroid/Ultroid/fork)
-[![Python Version](https://img.shields.io/badge/Python-v3.9-blue)](https://www.python.org/)
-[![Contributors](https://img.shields.io/github/contributors/TeamUltroid/Ultroid)](https://github.com/TeamUltroid/Ultroid/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/TeamUltroid/Ultroid/blob/main/LICENSE)
-[![Size](https://img.shields.io/github/repo-size/TeamUltroid/Ultroid)](https://github.com/TeamUltroid/Ultroid/)
 
 <details>
 <summary>More Info</summary>
@@ -19,8 +13,8 @@ A stable pluggable Telegram userbot, based on Telethon.
 </details>
 
 # Deploy 
-- [Heroku](https://github.com/TeamUltroid/Ultroid#Deploy-to-Heroku)
-- [Local Machine](https://github.com/TeamUltroid/Ultroid#Deploy-Locally)
+- [Heroku](https://github.com/ULTROID-OP/ULTROID-BOT#Deploy-to-Heroku)
+- [Local Machine](https://github.com/ULTROID-OP/ULTROID-BOT#Deploy-Locally)
 
 ## Deploy to Heroku
 - Get your `API_ID` and `API_HASH` from [here](https://my.telegram.org/) and click the below button!  <br />  
@@ -46,7 +40,7 @@ A stable pluggable Telegram userbot, based on Telethon.
 - Run the bot:   
 `bash resources/startup/startup.sh`
 
-Made with 💕 by [@TeamUltroid](https://t.me/TeamUltroid). <br />
+Made with 💕 by [@ULTROID-OP](https://t.me/ULTROID-OP). <br />
 
 # Credits
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
