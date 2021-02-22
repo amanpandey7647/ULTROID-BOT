@@ -1,9 +1,9 @@
 # Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
+# Copyright (C) 2020 ULTROID-OP
 #
 # This file is a part of < https://github.com/ULTROID-OP/ULTROID-BOT/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# <https://www.github.com/ULTROID-OP/Ultroid/blob/main/LICENSE/>.
 
 """
 ✘ Commands Available

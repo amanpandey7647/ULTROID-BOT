@@ -1,9 +1,9 @@
 # Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
+# Copyright (C) 2020 ULTROID-OP
 #
 # This file is a part of < https://github.com/ULTROID-OP/ULTROID-BOT/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# <https://www.github.com/ULTROID-OP/Ultroid/blob/main/LICENSE/>.
 
 from datetime import datetime
 
@@ -33,7 +33,7 @@ async def assistant(event):
             return
         await event.reply(
             f"Hey there, this is Ultroid Assistant of {OWNER_NAME}!\n\n{ok}",
-            buttons=[Button.url("Know More", url="https://t.me/TeamUltroid")],
+            buttons=[Button.url("Know More", url="https://t.me/ULTROID-OP")],
         )
 
 

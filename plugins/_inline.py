@@ -1,9 +1,9 @@
 # Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
+# Copyright (C) 2020 ULTROID-OP
 #
 # This file is a part of < https://github.com/ULTROID-OP/ULTROID-BOT/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# <https://www.github.com/ULTROID-OP/Ultroid/blob/main/LICENSE/>.
 
 import os
 import random
@@ -78,7 +78,7 @@ async def e(o):
         res = [
             b.article(
                 title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
+                url="https://t.me/ULTROID-OP",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
@@ -187,14 +187,14 @@ if Var.BOT_USERNAME is not None and asst is not None:
             [
                 Button.switch_inline(
                     "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                    query="go TeamUltroid",
+                    query="go ULTROID-OP",
                     same_peer=True,
                 )
             ],
             [
                 Button.switch_inline(
                     "Sᴇᴀʀᴄʜ Oɴ Yᴀʜᴏᴏ",
-                    query="yahoo TeamUltroid",
+                    query="yahoo ULTROID-OP",
                     same_peer=True,
                 )
             ],
