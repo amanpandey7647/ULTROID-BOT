@@ -25,7 +25,7 @@ A stable pluggable Telegram userbot, based on Telethon.
 - Get your `API_ID` and `API_HASH` from [here](https://my.telegram.org/)
 - Get your `REDIS_URI` and `REDIS_PASSWORD` from [here](https://redislabs.com), tutorial [here](./resources/extras/redistut.md).
 - Clone the repository: <br />
-`git clone https://github.com/TeamUltroid/Ultroid.git`
+`git clone https://github.com/ULTROID-OP/ULTROID-BOT.git`
 - Go to the cloned folder: <br />
 `cd Ultroid`
 - Create a virtual env:   <br />
@@ -35,7 +35,7 @@ A stable pluggable Telegram userbot, based on Telethon.
 `pip install -r requirements.txt`   
 - Generate your `SESSION`:   
 `bash sessiongen`
-- Fill your details in a `.env` file, as given in [`.env.sample`](https://github.com/TeamUltroid/Ultroid/blob/main/.env.sample).    
+- Fill your details in a `.env` file, as given in [`.env.sample`](https://github.com/ULTROID-OP/ULTROID-BOT/blob/main/.env.sample).    
 (You can either edit and rename the file or make a new file.)
 - Run the bot:   
 `bash resources/startup/startup.sh`

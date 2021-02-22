@@ -1,7 +1,7 @@
 # Ultroid - UserBot
 # Copyright (C) 2020 TeamUltroid
 #
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# This file is a part of < https://github.com/ULTROID-OP/ULTROID-BOT/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
@@ -29,7 +29,7 @@ apt-get autoremove --purge
 echo '
         •• Cloning Repository
 '
-git clone https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
+git clone https://github.com/ULTROID-OP/ULTROID-BOT.git /root/TeamUltroid/
 
 echo '
 	•• Getting Libraries and Installing
