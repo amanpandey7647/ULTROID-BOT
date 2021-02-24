@@ -29,14 +29,9 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 
 from resources.Config import Config
+COMMAND_HAND_LER = r"\."
 StartTime = time.time()
 ultroid = "1.0"
-COMMAND_HAND_LER = r"\."
-APP_ID = os.environ.get("API_ID", None)
-API_HASH = os.environ.get("API_HASH", None)
-STRING_SESSION = ""
-session_name = STRING_SESSION
-bot = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
@@ -57,12 +52,12 @@ def admin_cmd(pattern=None, command=None, **args):
             except BaseException:
                 CMD_LIST.update({file_test: [cmd]})
         else:
-            if len(Config.COMMAND_HAND_LER) == 2:
-                catreg = "^" + Config.COMMAND_HAND_LER
-                reg = Config.COMMAND_HAND_LER[1]
-            elif len(Config.COMMAND_HAND_LER) == 1:
-                catreg = "^\\" + Config.COMMAND_HAND_LER
-                reg = Config.COMMAND_HAND_LER
+            if len(COMMAND_HAND_LER) == 2:
+                catreg = "^" + COMMAND_HAND_LER
+                reg = COMMAND_HAND_LER[1]
+            elif len(COMMAND_HAND_LER) == 1:
+                catreg = "^\\" + COMMAND_HAND_LER
+                reg = COMMAND_HAND_LER
             args["pattern"] = re.compile(catreg + pattern)
             if command is not None:
                 cmd = reg + command
@@ -78,7 +73,7 @@ def admin_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(Config.SUDO_USERS)
+        args["from_users"] = None
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
@@ -89,9 +84,7 @@ def admin_cmd(pattern=None, command=None, **args):
 
     # add blacklist chats, UB should not respond in these chats
     args["blacklist_chats"] = True
-    black_list_chats = list(Config.UB_BLACK_LIST_CHAT)
-    if len(black_list_chats) > 0:
-        args["chats"] = black_list_chats
+    black_list_chats = -1001328168872
 
     # add blacklist chats, UB should not respond in these chats
     if "allow_edited_updates" in args and args["allow_edited_updates"]:
