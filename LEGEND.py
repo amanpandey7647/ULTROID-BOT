@@ -29,12 +29,10 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 
 from resources.Config import Config
-from var import Var
-
 StartTime = time.time()
 ultroid = "1.0"
-APP_ID = ""
-API_HASH = ""
+APP_ID = os.environ.get("API_ID", None)
+API_HASH = os.environ.get("API_HASH", None)
 STRING_SESSION = ""
 session_name = STRING_SESSION
 bot = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
