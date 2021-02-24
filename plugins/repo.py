@@ -9,6 +9,28 @@
                  CREDITS TEAMLEGEND
                  PLEASE KEEP CREDITS 🥺
 """
+from LEGEND import admin_cmd
+
+
+@bot.on(admin_cmd(outgoing=True, pattern="repo"))
+async def repo(event):
+    if event.fwd_from:
+        return
+    LEGENDX = Var.BOT_USERNAME
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    response = await bot.inline_query(LEGENDX, "repo")
+    await response[0].click(event.chat_id)
+    await event.delete()
+
+
+"""
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+"""
+
 
 
 BOT = "ULTROID"
