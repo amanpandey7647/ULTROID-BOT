@@ -32,6 +32,7 @@ from resources.Config import Config
 from var import Var
 
 StartTime = time.time()
+ultroid = "1.0"
 APP_ID = ""
 API_HASH = ""
 STRING_SESSION = ""
