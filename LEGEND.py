@@ -31,6 +31,7 @@ from telethon.sessions import StringSession
 from resources.Config import Config
 StartTime = time.time()
 ultroid = "1.0"
+COMMAND_HAND_LER = r"\."
 APP_ID = os.environ.get("API_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 STRING_SESSION = ""
