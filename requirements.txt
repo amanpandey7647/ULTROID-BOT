@@ -1,4 +1,5 @@
 asyncurban
+hachoir
 python-decouple==3.3
 python-dotenv==0.15.0
 telethon>=1.19.5
