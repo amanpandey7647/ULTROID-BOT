@@ -180,17 +180,17 @@ async def hehe():
         try:
             await ultroid_bot.asst.send_message(
                 Var.LOG_CHANNEL,
-                f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.me.id})\n**Support**: @TheUltroid\n➖➖➖➖➖➖➖➖➖",
+                f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.me.id})\n**Support**: @ULTROID_OP\n➖➖➖➖➖➖➖➖➖",
             )
         except BaseException:
             pass
     else:
         await ultroid_bot.send_message(
             Var.LOG_CHANNEL,
-            f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.me.id})\n**Support**: @TheUltroid\n➖➖➖➖➖➖➖➖➖",
+            f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.me.id})\n**Support**: @ULTROID_OP\n➖➖➖➖➖➖➖➖➖",
         )
     try:
-        await ultroid_bot(JoinChannelRequest("@TheUltroid"))
+        await ultroid_bot(JoinChannelRequest("@ULTROID_OP"))
     except BaseException:
         pass
 
@@ -278,7 +278,7 @@ if ultroid_bot.uid == 1100231654:
     ultroid_bot.loop.run_until_complete(legendx())
 ultroid_bot.loop.run_until_complete(onlyfrkanger())
 
-LOGS.warning("Ultroid has been deployed! Visit @TheUltroid for updates!!")
+LOGS.warning("Ultroid has been deployed! Visit @ULTROID_OP for updates!!")
 
 if __name__ == "__main__":
     ultroid_bot.run_until_disconnected()
