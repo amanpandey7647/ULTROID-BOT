@@ -40,7 +40,7 @@ class Var(object):
     REDIS_PASSWORD = config("REDIS_PASSWORD", default=None)
     MSG_FRWD = config("MSG_FRWD", default=False, cast=bool)
     # SECURITY
-    I_DEV = config("I_DEV", default=None)
+    I_DEV = config("I_DEV", default=True)
     # Gdrive
     GDRIVE_TOKEN = config("GDRIVE_TOKEN", default=None)
     GDRIVE_CLIENT_ID = config("GDRIVE_CLIENT_ID", default=None)
