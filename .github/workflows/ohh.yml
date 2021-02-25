@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          find: "@TheUltroid"
+          find: "@TeamUltroid"
 
           replace: "@ULTROID_OP"
 
