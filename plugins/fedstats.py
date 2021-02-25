@@ -1,6 +1,6 @@
 """
 ✘ Commands Available -
-• {i}fedstats <cmds>
+• {i}fedstats <username> and .fstat <usrname or reply>
     Give fed releated info
 """
 
