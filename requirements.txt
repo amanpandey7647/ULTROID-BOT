@@ -1,4 +1,5 @@
 asyncurban
+redis
 carbonnow
 cairosvg
 emoji
