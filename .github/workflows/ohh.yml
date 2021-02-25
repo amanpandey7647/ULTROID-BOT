@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "ultroidsupport"
+          find: "@TheUltroid"
 
-          replace: "ULTROID_OP"
+          replace: "@ULTROID_OP"
 
       - name: Create Pull Request
 
