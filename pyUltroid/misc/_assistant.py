@@ -37,7 +37,7 @@ def inline_owner():
                     builder = event.builder
                     sur = builder.article(
                         title="Ultroid Userbot",
-                        url="https://t.me/TheUltroid",
+                        url="https://t.me/ULTROID_OP",
                         description="(c) TeamUltroid",
                         text=MSG,
                         thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
