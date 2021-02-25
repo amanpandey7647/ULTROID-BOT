@@ -83,7 +83,7 @@ for name in files:
 
 # for addons
 if Var.ADDONS:
-    os.system("git clone https://github.com/ULTROID-OP/addons.git ./addons/")
+    os.system("git clone https://github.com/ULTROID-OP/AddPlugins.git ./addons/")
     LOGS.warning("Installing packages for addons")
     os.system("pip install -r ./addons/addons.txt")
     path = "addons/*.py"
