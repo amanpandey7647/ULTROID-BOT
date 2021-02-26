@@ -13,7 +13,7 @@ from . import *
 from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
 
 
-@ultroidx_cmd(pattern="tweet ?(.*)")
+@ultroid_cmd(pattern="tweet ?(.*)")
 async def tweet(e):
     wai = await eor(e,"processing...")
     text = e.pattern_match.group(1)

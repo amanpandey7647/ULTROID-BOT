@@ -54,7 +54,7 @@ from telethon.utils import pack_bot_file_id
 from . import *
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="tr",
 )
 async def _(event):
@@ -81,7 +81,7 @@ async def _(event):
         await eod(xx, str(exc), time=10)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="id$",
 )
 async def _(event):
@@ -107,7 +107,7 @@ async def _(event):
         await eor(event, "**Current Chat ID:**  `{}`".format(str(event.chat_id)))
 
 
-@ultroidx_cmd(pattern="bots ?(.*)")
+@ultroid_cmd(pattern="bots ?(.*)")
 async def _(ult):
     mentions = "**Bots in this Chat**: \n"
     input_str = ult.pattern_match.group(1)
@@ -139,7 +139,7 @@ async def _(ult):
     await eod(ult, mentions)
 
 
-@ultroidx_cmd(pattern="hl")
+@ultroid_cmd(pattern="hl")
 async def _(ult):
     try:
         input = ult.text.split(" ", maxsplit=1)[1]
@@ -148,7 +148,7 @@ async def _(ult):
     await eod(ult, "[ㅤㅤㅤㅤㅤㅤㅤ](" + input + ")", link_preview=False)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="circle$",
 )
 async def _(e):
@@ -236,7 +236,7 @@ async def _(e):
         return await eor(e, "**Reply to a gif or audio file only**")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="bash",
 )
 async def _(event):
@@ -287,7 +287,7 @@ async def _(event):
         await eod(xx, OUT)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="eval",
 )
 async def _(event):
@@ -360,7 +360,7 @@ async def aexec(code, event):
     return await locals()["__aexec"](e, e.client)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="sg(?: |$)(.*)",
 )
 async def lastname(steal):

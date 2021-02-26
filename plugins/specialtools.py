@@ -40,7 +40,7 @@ from bs4 import BeautifulSoup as b
 from . import *
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="getaudio$",
 )
 async def daudtoid(event):
@@ -55,7 +55,7 @@ async def daudtoid(event):
     await xx.edit("`Done.. Now reply to video In which u want to add that Audio`")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="addaudio$",
 )
 async def adaudroid(event):
@@ -87,7 +87,7 @@ async def adaudroid(event):
     await xx.delete()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern=r"dob ?(.*)",
 )
 async def hbd(event):
@@ -200,7 +200,7 @@ Zodiac -: {sign}
     )
 
 
-@ultroidx_cmd(pattern="sticker ?(.*)")
+@ultroid_cmd(pattern="sticker ?(.*)")
 async def _(event):
     x = event.pattern_match.group(1)
     if not x:
@@ -222,7 +222,7 @@ async def _(event):
     await uu.edit(a)
 
 
-@ultroidx_cmd(pattern="wall ?(.*)")
+@ultroid_cmd(pattern="wall ?(.*)")
 async def wall(event):
     inp = event.pattern_match.group(1)
     if not inp:

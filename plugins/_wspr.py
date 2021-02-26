@@ -23,7 +23,7 @@ snap = {}
 buddhhu = []
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="wspr ?(.*)",
 )
 async def _(e):

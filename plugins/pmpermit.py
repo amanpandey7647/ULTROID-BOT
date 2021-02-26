@@ -124,7 +124,7 @@ if sett == "True" and sett != "False":
                             f"[{name0}](tg://user?id={user.id}) was blocked for spamming.",
                         )
 
-    @ultroidx_cmd(pattern="(a|approve)(?: |$)")
+    @ultroid_cmd(pattern="(a|approve)(?: |$)")
     async def approvepm(apprvpm):
         if apprvpm.reply_to_msg_id:
             reply = await apprvpm.get_reply_message()
@@ -172,7 +172,7 @@ if sett == "True" and sett != "False":
         else:
             await apprvpm.edit(NO_REPLY)
 
-    @ultroidx_cmd(pattern="(da|disapprove)(?: |$)")
+    @ultroid_cmd(pattern="(da|disapprove)(?: |$)")
     async def disapprovepm(e):
         if e.reply_to_msg_id:
             reply = await e.get_reply_message()
@@ -213,7 +213,7 @@ if sett == "True" and sett != "False":
         else:
             await e.edit(NO_REPLY)
 
-    @ultroidx_cmd(pattern="block$")
+    @ultroid_cmd(pattern="block$")
     async def blockpm(block):
         if block.reply_to_msg_id:
             reply = await block.get_reply_message()
@@ -241,7 +241,7 @@ if sett == "True" and sett != "False":
                 Var.LOG_CHANNEL, f"#BLOCKED\nUser: [{name0}](tg://user?id={uid})"
             )
 
-    @ultroidx_cmd(pattern="unblock$")
+    @ultroid_cmd(pattern="unblock$")
     async def unblockpm(unblock):
         if unblock.reply_to_msg_id:
             reply = await unblock.get_reply_message()

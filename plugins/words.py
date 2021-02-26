@@ -29,7 +29,7 @@ from . import *
 dictionary = PyDictionary()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="meaning",
 )
 async def mean(event):
@@ -62,7 +62,7 @@ async def mean(event):
         await xx.edit(x)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="synonym",
 )
 async def mean(event):
@@ -94,7 +94,7 @@ async def mean(event):
         await xx.edit(f"No synonym found!!\n{str(e)}")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="antonym",
 )
 async def mean(event):
@@ -126,7 +126,7 @@ async def mean(event):
         await xx.edit(f"No antonym found!!\n{str(e)}")
 
 
-@ultroidx_cmd(pattern="ud (.*)")
+@ultroid_cmd(pattern="ud (.*)")
 async def _(event):
     xx = await eor(event, "`Processing...`")
     word = event.pattern_match.group(1)

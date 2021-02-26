@@ -53,7 +53,7 @@ from telethon.tl.types import ChatAdminRights, ChatBannedRights
 from . import *
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="promote ?(.*)",
     groups_only=True,
 )
@@ -95,7 +95,7 @@ async def prmte(ult):
     await xx.delete()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="demote ?(.*)",
     groups_only=True,
 )
@@ -137,7 +137,7 @@ async def dmote(ult):
     await xx.delete()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="ban ?(.*)",
     groups_only=True,
 )
@@ -192,7 +192,7 @@ async def bban(ult):
         )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="unban ?(.*)",
     groups_only=True,
 )
@@ -239,7 +239,7 @@ async def uunban(ult):
         )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="kick ?(.*)",
     groups_only=True,
 )
@@ -273,7 +273,7 @@ async def kck(ult):
         )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="pin($| (.*))",
 )
 async def pin(msg):
@@ -298,7 +298,7 @@ async def pin(msg):
     await x.edit(f"`Pinned` [this message](https://t.me/c/{cht.id}/{xx})!")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="unpin($| (.*))",
 )
 async def unp(ult):
@@ -329,7 +329,7 @@ async def unp(ult):
     await xx.edit("`Unpinned!`")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="purge$",
 )
 async def fastpurger(purg):
@@ -356,7 +356,7 @@ async def fastpurger(purg):
     await done.delete()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="purgeall ?(.*)",
 )
 async def _(e):
@@ -383,7 +383,7 @@ async def _(e):
         )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="del$",
 )
 async def delete_it(delme):
@@ -400,7 +400,7 @@ async def delete_it(delme):
             )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="edit",
 )
 async def editer(edit):

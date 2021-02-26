@@ -41,7 +41,7 @@ from youtubesearchpython import SearchVideos
 
 
 
-@ultroidx_cmd(pattern="song ?(.*)")
+@ultroid_cmd(pattern="song ?(.*)")
 async def download_video(ult):
     x = await eor(ult, "Searching...")
     url = ult.pattern_match.group(1)
@@ -132,7 +132,7 @@ By - {}
     os.remove(f"{rip_data['id']}.mp3")
 
 
-@ultroidx_cmd(pattern="vsong (.*)")
+@ultroid_cmd(pattern="vsong (.*)")
 async def download_video(ult):
     x = await eor(ult, "Processing..")
     url = ult.pattern_match.group(1)
@@ -206,7 +206,7 @@ By - {}
     await x.delete()
 
 
-@ultroidx_cmd(pattern=r"lyrics ?(.*)")
+@ultroid_cmd(pattern=r"lyrics ?(.*)")
 async def original(event):
     if not event.pattern_match.group(1):
         return await eor(event,"give query to search.")
@@ -226,7 +226,7 @@ async def original(event):
     await ab.delete()
     
     
-@ultroidx_cmd(pattern="songs ?(.*)")
+@ultroid_cmd(pattern="songs ?(.*)")
 async def _(event):
     try:
        await ultroid_bot(ImportChatInviteRequest('DdR2SUvJPBouSW4QlbJU4g'))

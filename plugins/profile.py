@@ -38,7 +38,7 @@ TMP_DOWNLOAD_DIRECTORY = "resources/downloads/"
 # bio changer
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="setbio ?(.*)",
 )
 async def _(ult):
@@ -56,7 +56,7 @@ async def _(ult):
 # name changer
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="setname ?((.|//)*)",
 )
 async def _(ult):
@@ -82,7 +82,7 @@ async def _(ult):
 # profile pic
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="setpic$",
 )
 async def _(ult):
@@ -117,7 +117,7 @@ async def _(ult):
 # delete profile pic(s)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="delpfp ?(.*)",
 )
 async def remove_profilepic(delpfp):
@@ -147,7 +147,7 @@ async def remove_profilepic(delpfp):
     await ok.delete()
 
 
-@ultroidx_cmd(pattern="gpoto ?(.*)")
+@ultroid_cmd(pattern="gpoto ?(.*)")
 async def gpoto(e):
     ult = e.pattern_match.group(1)
     try:

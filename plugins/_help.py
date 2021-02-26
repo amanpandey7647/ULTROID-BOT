@@ -14,7 +14,7 @@ from telethon.errors.rpcerrorlist import BotResponseTimeoutError as rep
 from . import *
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="help ?(.*)",
 )
 async def ult(ult):

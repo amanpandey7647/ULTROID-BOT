@@ -31,7 +31,7 @@ from . import *
 opn = []
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="dl ?(.*)",
 )
 async def download(event):
@@ -80,7 +80,7 @@ async def download(event):
     await eod(xx, f"Download Successful..\nTo\n`{o}`\nin `{t}`")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="ul ?(.*)",
 )
 async def download(event):
@@ -118,7 +118,7 @@ async def download(event):
     await eod(xx, f"Uploaded `{kk}` in `{t}`", time=5)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="save",
 )
 async def _(event):
@@ -141,7 +141,7 @@ async def _(event):
             os.remove(input_str)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="open$",
 )
 async def _(event):

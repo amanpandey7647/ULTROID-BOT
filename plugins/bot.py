@@ -61,7 +61,7 @@ except BaseException:
     HEROKU_APP_NAME = None
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="alive$",
 )
 async def lol(ult):
@@ -99,7 +99,7 @@ async def lol(ult):
         await ultroid_bot.send_message(ult.chat_id, als)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="ping$",
 )
 async def _(event):
@@ -113,21 +113,21 @@ async def _(event):
     await x.edit(f"**Pong !!** `{ms}ms`\n**Uptime** - `{uptime}`")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="cmds$",
 )
 async def cmds(event):
     await allcmds(event)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="restart$",
 )
 async def restartbt(ult):
     await restart(ult)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="logs$",
 )
 async def _(ult):
@@ -154,7 +154,7 @@ async def _(ult):
     return os.remove("logs-ultroid.txt")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="usage$",
 )
 async def dyno_usage(dyno):
@@ -221,7 +221,7 @@ async def dyno_usage(dyno):
     )
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="shutdown$",
 )
 async def shht(event):

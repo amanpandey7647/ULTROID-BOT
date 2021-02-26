@@ -70,7 +70,7 @@ def deEmojify(inputString: str) -> str:
     return re.sub(EMOJI_PATTERN, "", inputString)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="waifu ?(.*)",
 )
 async def waifu(animu):
@@ -111,7 +111,7 @@ async def waifu(animu):
         await xx.edit("Sorry boss, I can't send Sticker Here !!")
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="convert ?(.*)",
 )
 async def uconverter(event):
@@ -142,7 +142,7 @@ async def uconverter(event):
     await xx.delete()
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="kang",
 )
 async def hehe(args):
@@ -357,7 +357,7 @@ async def hehe(args):
             pass
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="round$",
 )
 async def ultdround(event):
@@ -403,7 +403,7 @@ async def ultdround(event):
     os.remove(ultt)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="destroy$",
 )
 async def ultdestroy(event):
@@ -446,7 +446,7 @@ async def ultdestroy(event):
     os.remove(roid)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="tiny$",
 )
 async def ultiny(event):

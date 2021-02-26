@@ -40,7 +40,7 @@ async def updateme_requirements():
         return repr(e)
 
 
-@ultroidx_cmd(
+@ultroid_cmd(
     pattern="update ?(.*)",
 )
 async def upstream(ups):
