@@ -23,7 +23,7 @@ import os
 from . import *
 
 
-@ultroid_cmd(pattern="superfban ?(.*)")
+@ultroidx_cmd(pattern="superfban ?(.*)")
 async def _(event):
     msg = await eor(event, "Starting a Mass-FedBan...")
     fedList = []
@@ -179,7 +179,7 @@ async def _(event):
     )
 
 
-@ultroid_cmd(pattern="superunfban ?(.*)")
+@ultroidx_cmd(pattern="superunfban ?(.*)")
 async def _(event):
     msg = await eor(event, "Starting a Mass-UnFedBan...")
     fedList = []

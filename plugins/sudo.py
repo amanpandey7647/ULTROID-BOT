@@ -25,7 +25,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from . import *
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="addsudo ?(.*)",
 )
 async def _(ult):
@@ -97,7 +97,7 @@ async def _(ult):
         return await ok.edit(f"**Failed to add `{id}` as SUDO User ... **")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="delsudo ?(.*)",
 )
 async def _(ult):
@@ -169,7 +169,7 @@ async def _(ult):
         return await ok.edit(f"**Failed to Remove `{id}` as SUDO User ... **")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="listsudo$",
 )
 async def _(ult):

@@ -161,7 +161,7 @@ async def on_afk(event):
             pass
 
 
-@ultroid_cmd(pattern=r"afk ?(.*)")
+@ultroidx_cmd(pattern=r"afk ?(.*)")
 async def _(event):
     if event.fwd_from:
         return

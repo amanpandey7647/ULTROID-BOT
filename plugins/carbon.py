@@ -173,7 +173,7 @@ all_col = [
 ]
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="carbon",
 )
 async def crbn(event):
@@ -202,7 +202,7 @@ async def crbn(event):
     os.remove(xx)
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="rcarbon",
 )
 async def crbn(event):

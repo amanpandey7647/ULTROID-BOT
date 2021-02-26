@@ -28,7 +28,7 @@ from telethon.tl import functions
 from . import *
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="delchat$",
     groups_only=True,
 )
@@ -43,7 +43,7 @@ async def _(e):
     await e.client.send_message(Var.LOG_CHANNEL, f"#Deleted\nDeleted {e.chat_id}")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="getlink$",
     groups_only=True,
 )
@@ -58,7 +58,7 @@ async def _(e):
     await eod(xx, f"Link:- {r.link}")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="create (b|g|c)(?: |$)(.*)",
 )
 async def _(e):

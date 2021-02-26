@@ -81,7 +81,7 @@ telegraph.create_account(short_name="Ultroid")
 # ================================================================#
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="kickme$",
     groups_only=True,
 )
@@ -92,7 +92,7 @@ async def leave(ult):
     await ultroid_bot(LeaveChannelRequest(ult.chat_id))
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="date$",
 )
 async def date(event):
@@ -104,7 +104,7 @@ async def date(event):
     ultroid = await eor(event, f"`{k}\n\n{d}`")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="calc",
 )
 async def _(event):
@@ -153,7 +153,7 @@ async def aexec(code, event):
     return await locals()["__aexec"](event)
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="chatinfo(?: |$)(.*)",
 )
 async def info(event):
@@ -170,7 +170,7 @@ async def info(event):
     return
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="listreserved$",
 )
 async def _(event):
@@ -185,7 +185,7 @@ async def _(event):
         await eor(event, output_str)
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="stats$",
 )
 async def stats(
@@ -256,7 +256,7 @@ async def stats(
     await ok.edit(response)
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="paste( (.*)|$)",
 )
 async def _(event):
@@ -313,7 +313,7 @@ async def _(event):
         await xx.edit(reply_text)
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="hastebin ?(.*)",
 )
 async def _(event):
@@ -346,7 +346,7 @@ async def _(event):
     await xx.edit("**Pasted to Hastebin** : [Link]({})".format(url))
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="info ?(.*)",
 )
 async def _(event):
@@ -422,7 +422,7 @@ async def _(event):
     await xx.delete()
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="invite ?(.*)",
     groups_only=True,
 )
@@ -453,7 +453,7 @@ async def _(ult):
                 await xx.edit(str(e))
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern=r"rmbg ?(.*)",
 )
 async def rmbg(event):
@@ -509,7 +509,7 @@ async def rmbg(event):
         )
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="telegraph ?(.*)",
 )
 async def telegraphcmd(event):
@@ -554,7 +554,7 @@ async def telegraphcmd(event):
         await xx.edit("Reply to a Message !")
 
 
-@ultroid_cmd(pattern="json")
+@ultroidx_cmd(pattern="json")
 async def _(event):
     the_real_message = None
     reply_to_id = None

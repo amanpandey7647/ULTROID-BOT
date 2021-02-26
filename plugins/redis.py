@@ -32,7 +32,7 @@ import re
 from . import *
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="setredis ?(.*)",
 )
 async def _(ult):
@@ -51,7 +51,7 @@ async def _(ult):
         await ok.edit("`Something Went Wrong`")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="getredis ?(.*)",
 )
 async def _(ult):
@@ -66,7 +66,7 @@ async def _(ult):
         await ok.edit("`Something Went Wrong`")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="delredis ?(.*)",
 )
 async def _(ult):
@@ -79,7 +79,7 @@ async def _(ult):
         await ok.edit("`Something Went Wrong`")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="renredis ?(.*)",
 )
 async def _(ult):
@@ -100,7 +100,7 @@ async def _(ult):
         await ok.edit("Key not found")
 
 
-@ultroid_cmd(
+@ultroidx_cmd(
     pattern="getkeys$",
 )
 async def _(ult):
