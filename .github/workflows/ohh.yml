@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@ultroid_cmd"
+          find: "@ultroidx_cmd"
 
-          replace: "@ultroidx_cmd"
+          replace: "@ultroid_cmd"
 
       - name: Create Pull Request
 
