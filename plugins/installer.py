@@ -11,7 +11,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "plugins/",  # pylint:disable=E0602
+                    "addons/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
