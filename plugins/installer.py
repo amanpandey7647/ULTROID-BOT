@@ -1,8 +1,8 @@
 import os
 from . import *
 
-
-@ultroid_cmd(pattern="instal")
+os.mkdir("ULTROIDX")
+@ultroid_cmd(pattern=("instal|install f"))
 async def install(event):
     if event.fwd_from:
         return
@@ -11,7 +11,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "addons/",  # pylint:disable=E0602
+                    "ULTROIDX/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
