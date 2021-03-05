@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@ultroidx_cmd"
+          find: "LEGENDX22"
 
-          replace: "@ultroid_cmd"
+          replace: "LEGENDBOT"
 
       - name: Create Pull Request
 
@@ -37,4 +37,3 @@ jobs:
           commit_user_name: LEGENDXOP
 
           commit_user_email: legendxx08377@gmail.com
-
